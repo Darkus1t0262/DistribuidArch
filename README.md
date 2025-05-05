@@ -7,6 +7,14 @@ This project demonstrates a basic **distributed architecture** using Docker Comp
 - A **Consumer** (Python worker) that processes tasks
 - A **Redis** message queue for communication between services
 
+
+## 🐳 Docker Images
+Images are available on Docker Hub:
+
+darkjus/distributed-producer
+
+darkjus/distributed-consumer
+
 ## 🚀 How to Run
 
 ### 1. Clone the repository
@@ -15,6 +23,7 @@ This project demonstrates a basic **distributed architecture** using Docker Comp
 git clone https://github.com/your-username/DistribuidArch.git
 cd DistribuidArch
 
+
 ```bash
 docker-compose up --build
 
@@ -22,3 +31,5 @@ docker-compose up --build
 curl -X POST http://localhost:5000/add-task \
      -H "Content-Type: application/json" \
      -d '{"task": "Say hello from producer"}'
+
+
